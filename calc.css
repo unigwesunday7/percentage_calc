@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.calc-container {
+    width: 30%;
+    background-color: rgb(1, 116, 116);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.calc-Header {
+    text-align: center;
+    background-color: rgb(0, 71, 71);
+    padding: 10px 0;
+    color: #fff;
+}
+
+.calc-Header p {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: orange;
+}
+
+
+.calc-section {
+    padding: 15px 20px;
+}
+
+.calc-select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form {
+    padding: 20px 0;
+    color: #fff;
+}
+
+form p {
+    margin: 5px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form input:last-of-type {
+    background-color: orange;
+    border: none;
+    margin-bottom: 0px;
+}
+
+#calcResult {
+    text-align: center;
+}
+
+.footer {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.footer p span {
+    color: orange;
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 800px) {
+
+    .calc-container {
+        width: 80%;
+    }
+}

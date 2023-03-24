@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Percentage calculator</title>
+</head>
+<body>
+    <div class="calc-container">
+        <div class="calc-Header">
+            <h2>Percentage Calculator</h2>
+            <p>Choose your calculator</p>
+        </div>
+        
+        <div class="calc-section">
+        <select class="calc-select" id="calcSelect">
+            <option>What is Y% of X</option> 
+            <option>X is Y% of what</option>
+            <option>What % of X is Y</option>
+            <option>X% of what is Y</option>
+            <option>Y% of X is what</option>
+        </select>
+        
+        <form id="calcForm">
+            <p>Enter X</p><input type="text" placeholder="Enter X" id="input1">
+            <p>Enter Y</p><input type="text" placeholder="Enter Y" id="input2">
+            <input type="submit" value="Calculate"><br><br><br>
+            <h3 id="calcResult"></h3>
+        </form>
+    </div>
+        
+    </div>
+
+    <div class="footer">
+        <p>Designed by: <span>Sunny Visuals</span> </p>
+    </div>
+    <script src="calc.js" type="text/javascript"></script>
+</body>
+</html>
