@@ -5,6 +5,7 @@
 }
 
 body {
+    width: 100vw;
     height: 100vh;
     background-color: teal;
     display: flex;
@@ -24,15 +25,16 @@ body {
 .calc-Header {
     text-align: center;
     background-color: rgb(0, 71, 71);
-    padding: 10px 0;
+    padding: 20px 0;
     color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
-.calc-Header p {
+.calcDescription {
     margin-top: 5px;
-    font-style: italic;
     font-size: 0.9rem;
-    color: orange;
+    color: #fff;
+    margin-bottom: 5px;
 }
 
 
@@ -44,6 +46,9 @@ body {
     width: 100%;
     padding: 15px;
     border-radius: 5px;
+    background-color: #e4e4e4;
+    outline: none;
+    color: #000;
 }
 
 form {
@@ -57,19 +62,34 @@ form p {
 
 form input {
     width: 100%;
+    display: block;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
+    background-color: #e4e4e4;
+    border: none;
+    color: #000;
+}
+
+form input:focus {
+    outline: none;
 }
 
 form input:last-of-type {
     background-color: orange;
     border: none;
     margin-bottom: 0px;
+    color: #000;
+    font-size: 1.1rem;
 }
 
 #calcResult {
     text-align: center;
+}
+
+#sumary {
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 .footer {
@@ -85,10 +105,14 @@ form input:last-of-type {
 
 
 /* Media Query */
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 250px), (max-width: 800px) {
 
     .calc-container {
-        width: 80%;
+        width: 85%;
+    }
+
+    #calcResult {
+        font-size: 0.8rem;
+        margin-top: 0;
     }
 }

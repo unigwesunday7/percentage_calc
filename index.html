@@ -11,23 +11,24 @@
     <div class="calc-container">
         <div class="calc-Header">
             <h2>Percentage Calculator</h2>
-            <p>Choose your calculator</p>
         </div>
         
         <div class="calc-section">
+            <p class="calcDescription">Choose your calculator</p>
         <select class="calc-select" id="calcSelect">
-            <option>What is Y% of X</option> 
-            <option>X is Y% of what</option>
-            <option>What % of X is Y</option>
-            <option>X% of what is Y</option>
-            <option>Y% of X is what</option>
+            <option class="option">What is Y% of X</option> 
+            <option class="option">X is Y% of what</option>
+            <option class="option">What % of X is Y</option>
+            <option class="option">X% of what is Y</option>
+            <option class="option">Y% of X is what</option>
         </select>
         
         <form id="calcForm">
-            <p>Enter X</p><input type="text" placeholder="Enter X" id="input1">
-            <p>Enter Y</p><input type="text" placeholder="Enter Y" id="input2">
+            <p>Enter X</p><input type="text" id="input1">
+            <p>Enter Y</p><input type="text" id="input2">
             <input type="submit" value="Calculate"><br><br><br>
             <h3 id="calcResult"></h3>
+            <p id="sumary"></p>
         </form>
     </div>
         
