@@ -23,7 +23,7 @@ form.addEventListener('submit', function(event) {
         var y = parseFloat(input2.value);
         var result = x * 100 / y;
         calcResult.innerText = x + " is " + y + " % of " + result;
-        sumary.innerText = `Equation:  x * 100 / x`;
+        sumary.innerText = `Equation:  x * 100 / y`;
         event.preventDefault();
     } 
     
